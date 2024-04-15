@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "1c4856de-6565-4c65-aceb-5f15407b82e0",
+		"name": "Carros",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31982169"
+	},
+	"item": [
+		{
+			"name": "Listar Carros",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"registro\": 15,\r\n        \"nome\": \"volks\",\r\n        \"cor\": \"amarelo\",\r\n        \"potencia\": \"55\",\r\n        \"dataAquisicao\": \"2024-04-14T20:16:05.819543800Z\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/carros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Carro",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"registro\": 15,\r\n        \"nome\": \"volks\",\r\n        \"cor\": \"amarelo\",\r\n        \"potencia\": \"55\",\r\n        \"dataAquisicao\": \"2024-04-14T20:16:05.819543800Z\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/carros/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carros",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Incluir Carros",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"registro\": 16,\r\n        \"nome\": \"volks\",\r\n        \"cor\": \"amarelo\",\r\n        \"potencia\": \"55\",\r\n        \"dataAquisicao\": \"2024-04-14T20:16:05.819543800Z\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/carros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar Carros",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"registro\": 23,\r\n        \"nome\": \"mercedes bens\",\r\n        \"cor\": \"verde\",\r\n        \"potencia\": \"77\",\r\n        \"dataAquisicao\": \"2024-04-11T20:16:05.819543800Z\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/carros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Carro",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"registro\": 23,\r\n        \"nome\": \"mercedes bens\",\r\n        \"cor\": \"verde\",\r\n        \"potencia\": \"77\",\r\n        \"dataAquisicao\": \"2024-04-11T20:16:05.819543800Z\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/carros/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carros",
+						"23"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
